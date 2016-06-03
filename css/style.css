@@ -13,30 +13,92 @@ body{
 .logo{
 	padding: 18px 0 25px 0;
 }
+.content-wrapper{
+	width: 175px;
+	margin: 0 auto;
+}
 .content{
 	font-family: 'PT Sans', sans-serif;
 }
-.content__text{
-	margin-top: 20px;
-	font-size: 24px;
-	color: #333333;
-	padding-left: 35%;
-	margin-bottom: 40px;
+	.content__text{
+		margin-top: 20px;
+		font-size: 24px;
+		color: #333333;
+	}
+.text-wrapper{
+	width: 285px;
+	margin: 0 auto;
 }
 .countries{
 	width: 1165px;
-	margin: 0 auto;
+	margin: 40px auto 0 auto;
 }
-.countries__item{
-	font-size: 30px;
-	display: inline-block;
-	position: relative;
-	padding-left: 60px;
-	margin-left: 35px;
+	.countries__item{
+		font-size: 30px;
+		display: inline-block;
+		margin-left: 35px;
+	}
+	.countries__link{
+		padding-left: 60px;
+		display: block;
+		position: relative;
+	}
+	.countries__image{
+		position: absolute;
+		top: 12%;
+		left: 0;
+		box-shadow: 1px 2px 10px 0px rgba(153, 153, 153, 0.5);
+	}
+.country{
+	margin-top: 20px;
 }
-.countries__image{
-	position: absolute;
-	top: 12%;
-	left: 0;
-	box-shadow: 1px 2px 10px 0px rgba(153, 153, 153, 0.5)
+	.country__name{
+		font-size: 14px;
+	}
+	.country__image{
+		height: 10px;
+		width: 15px;
+		box-shadow: 1px 2px 8px 0px rgba(153, 153, 153, 0.75);
+		margin-right: 4px;
+	}
+	.country__change{
+		font-size: 10px;
+		color: #666666;
+		float: right;
+		padding-top: 3px;
+	}
+.sign-in{
+	margin-top: 3px;
+}
+	.sign-in__item{
+		border: 2px solid #cccccc;
+		margin-top: 12px;
+		padding-top: 2px;
+		padding-left: 9px;
+		padding-bottom: 4px;
+		font-size: 14px;
+		color: #cccccc;
+		vertical-align: top;
+		width: 164px;
+	}
+	.sign-in__item_submit{
+		margin-top: 10px;
+		background: #99cc00;
+		color: #000000;
+		height: 29px;
+		width: 176px;
+		padding-left: 0px;
+	}
+	.sign-in__signed{
+		margin-top: 10px;
+	}
+	.sign-in__label{
+		font-size: 10px;
+		color: #666666;
+	}
+.help{
+	font-size: 10px;
+	color: #666666;
+	float: right;
+	padding-top: 5px;
 }
