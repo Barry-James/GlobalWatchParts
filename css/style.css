@@ -245,3 +245,33 @@ body{
 		top: 0;
 		left: 25px;
 	}
+.sorted-menu{
+	font-size: 14px;
+	float: right;
+	width: 555px;
+	margin-top: 25px;
+}
+	.sorted-menu__header{
+		float: left;
+		padding-right: 12px;
+	}
+	.sorted-menu__item{
+		display: inline-block;
+		margin-right: 10px;
+		margin-left: 6px;
+
+	}
+	.sorted-menu__item:hover{
+		color: #99cc00;
+		transition: 0.3s;
+	}
+	.sorted-menu__item:active{
+		color: #99cc00;
+		text-decoration: none;
+	}
+	.sorted-menu__item_blue{
+		color: #00ccff;
+	}
+	.sorted-menu__item_orange{
+		color: #ff6600;
+	}
