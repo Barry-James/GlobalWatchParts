@@ -6,6 +6,11 @@ body{
 	background: #333333;
 	height: 80px;
 }
+.header_big{
+	padding-left: 18px;
+	padding-right: 10px;
+	font-family: 'PT Sans', sans-serif;
+}
 .logo-wrapper{
 	width: 525px;
 	margin: 0 auto;
@@ -13,6 +18,50 @@ body{
 .logo{
 	padding: 18px 0 25px 0;
 }
+.phone-number{
+	float: right;
+	padding-top: 20px;
+}
+.phone{
+	color: #ffffff;
+	font-size: 30px;
+	text-decoration: none;
+	float: left;
+}
+.country_header{
+	float: right;
+	margin-left: 15px; 
+}
+	.country__name_header{
+		color: #cccccc;
+		font-size: 24px;
+	}
+	.country__image_header{
+		height: 16px;
+		width: 30px;
+		margin-right: 5px;
+	}
+	.country__change_header{
+		color: #cccccc;
+		font-size: 14px;
+		vertical-align: top;
+	}
+.account{
+	float: right;
+	margin-left: 73px;
+	color: #cccccc;
+	font-size: 14px;
+	text-align: right;
+	padding-top: 10px;
+}
+	.account__name{
+		font-weight: bold;
+		color: #99cc00;
+	}
+	.account__link{
+		font-size: 24px;
+		line-height: 0.9;
+	}
 .content-wrapper{
 	width: 175px;
 	margin: 0 auto;
@@ -42,6 +91,10 @@ body{
 		padding-left: 60px;
 		display: block;
 		position: relative;
+	}
+	.countries__link:hover{
+		color: #99cc00;
+		transition: 0.3s;
 	}
 	.countries__image{
 		position: absolute;
