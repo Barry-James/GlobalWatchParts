@@ -224,3 +224,24 @@ body{
 		color: #ffffff;
 		text-decoration: none;
 	}
+.list-wrapper{
+	width: 860px;
+	margin: 0 auto;
+}
+.list{
+	font-size: 14px;
+}
+	.list__number{
+		margin-top: 25px;
+		color: #99cc00;
+		display: inline-block;
+		position: relative;
+		width: 165px;
+		height: 70px;
+	}
+	.list__group{
+		color: #333333;
+		position: absolute;
+		top: 0;
+		left: 25px;
+	}
