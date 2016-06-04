@@ -16,7 +16,7 @@ body{
 	margin: 0 auto;
 }
 .logo{
-	padding: 18px 0 25px 0;
+	padding-top: 18px;
 }
 .phone-number{
 	float: right;
@@ -131,7 +131,6 @@ body{
 		padding-bottom: 4px;
 		font-size: 14px;
 		color: #cccccc;
-		vertical-align: top;
 		width: 164px;
 	}
 	.sign-in__item_submit{
@@ -155,3 +154,73 @@ body{
 	float: right;
 	padding-top: 5px;
 }
+.search{
+	float: left;
+	padding-top: 15px;
+	margin-left: 13px;
+	position: relative;
+}
+	.search__field{
+		border: 2px solid #cccccc;
+		border-right: none;
+		padding-top: 0px;
+		padding-left: 9px;
+		padding-bottom: 0px;
+		font-size: 14px;
+		color: #cccccc;
+		width: 122px;
+		height: 25px;
+  		line-height: 25px;
+  		margin: 0;
+  		outline: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        vertical-align: top;
+  }
+	.search__button{
+		position: absolute;
+		left: 122px;
+		top: 15px;
+		background: #99cc00;
+		color: #000000;
+		height: 25px;
+		line-height: 25px;
+		box-sizing: content-box;
+		padding: 0px 5px 5px 5px;
+  		margin: 0;
+  		outline: 0;
+  		appearance: ;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+ 		 box-sizing: border-box;
+	}
+.attention{
+	float: right;
+	background: #333333;
+	margin-top: 5px;
+	padding-right: 600px;
+}
+	.attention__alarm{
+		display: inline-block;
+		height: 45px;
+		line-height: 45px;
+		font-size: 24px;
+		color: #ff0000;
+		padding-right: 15px;
+		padding-left: 13px;
+	}
+	.attention__text{
+		display: inline-block;
+		color: #ffffff;
+		font-size: 14px;
+		height: 45px;
+		line-height: 45px;
+		vertical-align: top;
+	}
+	.attention__link{
+		padding-left: 8px;
+		display: inline-block;
+		color: #ffffff;
+		text-decoration: none;
+	}
