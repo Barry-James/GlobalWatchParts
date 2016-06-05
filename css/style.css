@@ -2,9 +2,21 @@ body{
 	margin: 0;
 	padding: 0
 }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.wrapper{
+	max-width: 1280px;
+	margin: 0 auto;
+}
 .header{
 	background: #333333;
 	height: 80px;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
 }
 .header_big{
 	padding-left: 18px;
@@ -53,6 +65,7 @@ body{
 	font-size: 14px;
 	text-align: right;
 	padding-top: 10px;
+	padding-right: 30px;
 }
 	.account__name{
 		font-weight: bold;
@@ -68,6 +81,7 @@ body{
 }
 .content{
 	font-family: 'PT Sans', sans-serif;
+	padding-top: 80px;
 }
 	.content__text{
 		margin-top: 20px;
@@ -309,16 +323,13 @@ body{
 		text-decoration: none;
 	}
 .catalog{
-	
+	margin-left: 200px;
 }
-	.catalog__row{
-		float: right;
-		border-top: 40px solid transparent;
-	}
 	.catalog__item{
-		display: inline-block;
+		float: right;
 		margin-right: 20px;
 		vertical-align: top;
+		border-top: 40px solid transparent;
 	}
 	.discription{
 
@@ -404,4 +415,7 @@ body{
 .footer{
 	height: 60px;
 	background: #333333;
+	position: fixed;
+	top:91%;
+	width: 100%;
 	}
