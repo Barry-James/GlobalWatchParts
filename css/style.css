@@ -326,6 +326,28 @@ body{
 		vertical-align: top;
 		border-top: 40px solid transparent;
 	}
+	.catalog__link{
+		display: block;
+		position: relative;
+	}
+	.zoom{
+		display: block;
+		background: rgba(255, 255, 255, .5);
+		width: 160px;
+		height: 50px;
+		position: absolute;
+		top: 75%;
+		visibility: hidden;
+	}
+	.zoom__pic{
+		position: absolute;
+		top: 20%;
+		left: 38%;
+	}
+	.catalog__link:hover .zoom{
+		visibility: visible;
+	}
+
 	.discription{
 
 	}
@@ -367,6 +389,12 @@ body{
 				padding-bottom: 4px;
 				position: relative;
 			}
+			.sign:hover{
+				box-shadow: 2px 2px 0px 0px #333333 inset,
+							-2px -2px 0px 0px #333333 inset,
+							3px 3px 0px 0px #ffffff inset,
+							-3px -3px 0px 0px #ffffff inset;
+			}
 			.sign_minus{
 				left: 5px;
 			}
@@ -407,11 +435,32 @@ body{
 			.add_stock2{
 				background: #ff6600;
 			}
+.pages{
+	margin: 10px 0 70px 0;
+	text-align: right;
+}
+	.pages__link{
+		font-size: 14px;
+		display: inline-block;
+		padding: 3px;
+	}
+	.pages__link:hover{
+		color: #99cc00;
+		transition: 0.3s;
+	}
+	.pages__link:active{
+		color: #99cc00;
+		text-decoration: none;
+	}
+	.dots{
+		display: inline-block;
+		padding: 3px;
+	}
 .footer{
 	height: 60px;
 	background: #333333;
 	position: fixed;
-	top:91.5%;
+	top:92%;
 	width: 100%;
 	font-family: 'PT Sans', sans-serif;
 }
