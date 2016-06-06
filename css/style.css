@@ -407,6 +407,16 @@ body{
 			.sign_stock2{
 				color: #ff6600;
 			}
+			.sign_table{
+				color: #333333;
+				background: #cccccc;
+			}
+			.sign_table:hover{
+				box-shadow: 2px 2px 0px 0px #cccccc inset,
+							-2px -2px 0px 0px #cccccc inset,
+							3px 3px 0px 0px #ffffff inset,
+							-3px -3px 0px 0px #ffffff inset;
+			}
 			.number{
 				display: inline-block;
 				width: 12px;
@@ -419,6 +429,10 @@ body{
 				position: relative;
 				top: -3px;
 			}
+				.number_table{
+					border-top: 2px solid #cccccc;
+					border-bottom: 2px solid #cccccc;
+				}
 			.add{
 				display: inline-block;
 				width: 80px;
@@ -496,3 +510,86 @@ body{
 			padding-left: 4px;
 			vertical-align: top;
 		}
+.table-title{
+	color: #333333;
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+	.table-title__cart1{
+		color: #00ccff;
+	}
+.table{
+	display: table;
+	box-shadow: 0px 1px 0px 0px #cccccc;
+}
+	.table__r{
+		display: table-row;
+	}
+	.table__r:nth-child(2n){
+		background-color: #ededed;
+	}
+	.table__d{
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		border-top: 5px solid #ffffff;
+		border-bottom: 5px solid #ffffff;
+	}
+	.table__d_first-r{
+		color: #999999;
+		font-size: 14px;
+		border-bottom: 1px solid #cccccc;
+		height: 20px;
+		margin: 5px;
+	}
+	.table__d_last-r{
+		}
+	.table__d_first-c{
+		height: 100px;
+		width: 45px;
+		color: #999999;
+	}
+	.table__d_price{
+		color: #000000;
+		font-size: 24px;
+		width: 84px;
+	}
+	.watchs-cart-image{
+		height: 100px;
+		width: 80px;
+		float: left;
+	}
+	.watchs-cart-discription{
+		color: #000000;
+		font-size: 14px;
+		display: block;
+		text-align: left;
+		padding-top: 40px;
+		padding-left: 105px;
+	}
+	.table__d_second-c{
+		width: 330px;
+	}
+.form-wrapper{
+	width: 620px;
+}
+.total{
+	font-size: 24px;
+	color: #333333;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: right;
+}
+	.total__price{
+		color: #00ccff;
+		font-weight: bold;
+	}
+.submit-order{
+	float: right;
+	height: 25px;
+	font-size: 14px;
+	background-color: #99cc00;
+	color: #000000;
+	width: 110px;
+}
