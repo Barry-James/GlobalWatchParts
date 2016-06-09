@@ -18,29 +18,26 @@ body{
 	width: 100%;
 	position: fixed;
 	z-index: 10;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .header_big{
 	padding-right: 10px;
 	font-family: 'PT Sans', sans-serif;
 }
 .logo-wrapper{
+	display: block;
 	width: 525px;
 	margin: 0 auto;
+	text-decoration: none;
 }
 .logo{
 	padding-top: 18px;
 }
-.header_320{
-	background: #333333;
-	height: 67px;
-	width: 100%;
-	position: fixed;
-	z-index: 10;
+.logo_size_320 {
 	display: none;
-}
-.logo-wrapper_320{
-	width: 300px;
-	margin: 0 auto;
+	padding-top: 7px;
 }
 .logo_320{
 	padding-top: 15px;
@@ -911,12 +908,32 @@ body{
 	}
 
 }
+
 @media screen and (max-width: 720px){
 	.list-wrapper{
 		width: 100%;
 		margin: 0 15px;
 	}
 }
+
+@media screen and (max-width: 550px){
+	.header{
+		height: 67px;
+	}
+
+	.logo-wrapper{
+		width: 300px;
+	}
+
+	.logo{
+		display: none;
+	}
+
+	.logo_size_320 {
+		display: inline-block;
+	}
+}
+
 @media screen and (max-width: 400px){
 	.logo_tiny{
 		font-size: 26px;
@@ -943,12 +960,6 @@ body{
 }
 
 @media screen and (max-width: 320px){
-	.header_large{
-		display: none;
-	}
-	.header_320{
-		display: block;
-	}
 	.catalog{
 		margin: 0;
 		padding: 0;
