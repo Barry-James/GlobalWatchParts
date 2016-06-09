@@ -29,6 +29,21 @@ body{
 .logo{
 	padding-top: 18px;
 }
+.header_320{
+	background: #333333;
+	height: 67px;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	display: none;
+}
+.logo-wrapper_320{
+	width: 300px;
+	margin: 0 auto;
+}
+.logo_320{
+	padding-top: 15px;
+}
 .phone-number{
 	float: right;
 	padding-top: 20px;
@@ -898,6 +913,24 @@ body{
 }
 
 @media screen and (max-width: 320px){
-	
+	.header_large{
+		display: none;
+	}
+	.header_320{
+		display: block;
+	}
+	.catalog{
+		margin: 0;
+		padding: 0;
+	}
+	.catalog__item{
+		margin: 0;
+		padding: 0;
+	}
+	.sorted-menu{
+		width: 300px;
+		padding-left: 10px;
+	}
+
 }
 
