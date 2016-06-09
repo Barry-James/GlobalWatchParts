@@ -866,6 +866,7 @@ body{
 	}
 	.account-header{
 		padding-left: 10px;
+		margin-top: 25px;
 	}
 	.account-menu{
 		padding-left: 10px;
@@ -993,6 +994,27 @@ body{
 	}
 	.table__r:nth-child(2n){
 		background-color: #ffffff;
+	}
+	.account-header{
+		margin-top: 10px;
+	}
+	.account-menu{
+		width:310px;
+	}
+	.orders-table__cell_first{
+		width: 40px;
+	}
+	.orders-table__cell_second{
+		width: 100px;
+	}
+	.orders-table__cell_third{
+		width: 60px;
+	}
+	.orders-table__cell_forth{
+		width: 75px;
+	}
+	.orders-table-wrapper{
+		width: 295px;
 	}
 
 }
