@@ -4,6 +4,11 @@ body {
     min-width: 320px;
 }
 
+/* Block .wrapper-bigscreen */
+.wrapper-bigscreen {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 /* Block .header */
 .header {
@@ -28,6 +33,83 @@ body {
         height: 67px;
     }
 }
+
+/* Block .header-signin */
+.header-signin {
+    height: 43px;
+    background: #333333;
+}
+    .header-signin__default {
+        display: block;
+    }
+    .header-signin.is-full .header-signin__default {
+        display: none;
+    }
+    .header-signin__full {
+        display: none;
+    }
+    .header-signin.is-full .header-signin__full {
+        display: block;
+    }
+
+/* Block .header-signin-default */
+.header-signin-default {
+    padding: 8px 10px;
+    vertical-align: top;
+}
+
+    .header-signin-default__menu {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .header-signin-default__logo {
+        display: inline-block;
+        margin: 0 0 0 16px;
+        color: #99cc00;
+        font: bold 26px/1.2 'PT Sans Narrow', sans-serif;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+/* Block .header-signin-full */
+.header-signin-full {
+    
+}
+
+/* Block .search */
+.search{
+    float: right;
+}
+    .search__field {
+        width: 130px;
+        height: 27px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 27px;
+        border: 1px solid #cccccc;
+        border-right: 0;
+        outline: 0;
+        font-family: 'PT Sans', sans-serif;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        vertical-align: top;
+  }
+    .search__button {
+        width: 26px;
+        height: 27px;
+        margin: 0;
+        background: #99cc00;
+        color: #000000;
+        line-height: 25px;
+        outline: 0;
+        border: 1px solid #cccccc;
+        font-family: 'PT Sans', sans-serif;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
 /* Block .logo */
 .logo {
