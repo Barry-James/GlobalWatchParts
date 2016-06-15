@@ -42,6 +42,7 @@ body {
 /* Block .header-signin */
 .header-signin {
     height: 43px;
+    font-family: 'PT Sans', sans-serif;
 }
     .header-signin__content {
         position: fixed;
@@ -69,6 +70,18 @@ body {
     .header-signin {
         height: 57px;
     }
+}
+
+@media screen and (min-width: 1280px) {
+    .header-signin {
+        height: 80px;
+    }
+        .header-signin__default {
+            display: none;
+        }
+        .header-signin__full {
+            display: block;
+        }
 }
 
 /* Block .header-signin-default */
@@ -124,8 +137,19 @@ body {
 
 /* Block .header-signin-full */
 .header-signin-full {
-    
+    padding: 0 15px;
+    vertical-align: top;
 }
+
+    .header-signin-full__logo-image {
+        display: inline-block;
+        margin: 20px 0 0;
+        height: 42px;
+        vertical-align: top;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
 /* Block .search */
 .search{}
@@ -530,3 +554,20 @@ body {
             font-size: 14px;
         }
 }
+
+/* Block .account */
+.account {
+    float: right;
+    padding: 10px 0 0;
+    color: #cccccc;
+    font-size: 14px;
+    text-align: right;
+}
+    .account__name {
+        font-weight: bold;
+        color: #99cc00;
+    }
+    .account__link {
+        font-size: 24px;
+        line-height: 1.0;
+    }
