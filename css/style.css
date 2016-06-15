@@ -159,3 +159,66 @@ body {
             margin: 0;
         }
 }
+
+/* Block .form-signin -wrapper */
+.signin-wrapper {
+    width: 175px;
+    margin: 0 auto;
+}
+
+/* Block .change-region */
+.change-region {
+    /* Do nothing */
+}
+    .change-region__current {
+        font-size: 14px;
+    }
+    .change-region__flag {
+        width: 15px;
+        height: 10px;
+        box-shadow: 1px 2px 8px 0px rgba(153, 153, 153, 0.75);
+        margin-right: 4px;
+    }
+    .change-region__link {
+        font-size: 10px;
+        color: #666666;
+        float: right;
+        padding-top: 3px;
+    }
+
+/* Block .form-signin */
+.form-signin  {
+    /*margin-top: 3px;*/
+}
+    .form-signin__field {
+        border: 1px solid #cccccc;
+        margin: 12px 0 0 0;
+        padding: 2px 4px;
+        font-size: 14px;
+        color: #cccccc;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .form-signin__button {
+        width: 100%;
+        height: 30px;
+        margin: 8px 0 5px;
+        padding-left: 0px;
+        background: #99cc00;
+        color: #000000;        
+    }
+    .form-signin__label {
+        font-size: 10px;
+        color: #666666;
+    }
+    .form-signin__checkbox {
+        margin-right: 4px;
+    }
+    .form-signin__help {
+        float: right;
+        padding-top: 5px;
+        font-size: 10px;
+        color: #666666;
+    }
