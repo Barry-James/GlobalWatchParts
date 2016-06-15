@@ -12,15 +12,19 @@ body {
 
 /* Block .header */
 .header {
-    position: fixed;
-    z-index: 10;
     height: 80px;
     width: 100%;
-    background: #333333;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
+
+    .header__content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        height: inherit;
+        background: #333333;
+    }
 
 @media screen and (max-width: 1140px) {
     .header {
@@ -37,8 +41,16 @@ body {
 /* Block .header-signin */
 .header-signin {
     height: 43px;
-    background: #333333;
 }
+    .header-signin__content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        min-width: 320px;
+        height: inherit;
+        background: #333333;
+    }
     .header-signin__default {
         display: block;
     }
@@ -180,7 +192,6 @@ body {
 
 /* Block .content */
 .content {
-    padding: 80px 0 0;
     font-family: 'PT Sans', sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -194,22 +205,11 @@ body {
         text-align: center;
     }
 
-@media screen and (max-width: 1140px) {
-    .content {
-        padding: 72px 0 0;
-    }
-}
-
 @media screen and (max-width: 550px) {
-    .content {
-        padding: 67px 0 0;
-    }
-
     .content__title {
         padding: 12px 0;
     }
 }
-
 
 /* Block .countries */
 .countries {
@@ -341,3 +341,36 @@ body {
         font-size: 10px;
         color: #666666;
     }
+
+/* Block */
+.attention {
+    min-height: 47px;
+    margin: 5px 0 0 0;
+    padding: 0 10px;
+    background: #333333;
+}
+    .attention__alarm {
+        display: inline-block;
+        height: 27px;
+        margin: 10px 5px 0 0;
+        line-height: 27px;
+        font-size: 24px;
+        color: #ff0000;
+    }
+    .attention__text {
+        display: inline-block;
+        margin: 5px 0 10px;
+        color: #ffffff;
+        font-size: 14px;
+        vertical-align: middle;
+    }
+    .attention__link {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+@media screen and (min-width: 720px) {
+    .attention {
+        padding: 0 15px;
+    }
+}
