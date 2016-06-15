@@ -70,6 +70,9 @@ body {
     .header-signin {
         height: 57px;
     }
+    .header-signin.is-full {
+        height: 80px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -142,7 +145,7 @@ body {
 }
 
     .header-signin-full__logo-image {
-        display: inline-block;
+        display: none;
         margin: 20px 0 0;
         height: 42px;
         vertical-align: top;
@@ -150,6 +153,41 @@ body {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+
+    .header-signin-full__account {
+        
+    }
+
+    .header-signin-full__contacts {
+        
+    }
+
+@media screen and (min-width: 720px) {
+    .header-signin-full__contacts {
+        float: left;
+        margin: 0 30% 0 0;
+    }
+    .header-signin-full__account {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .header-signin-full__logo-image {
+        display: inline-block;
+        float: left;
+    }
+
+    .header-signin-full__account {
+        float: right;
+        width: 180px;
+    }
+
+    .header-signin-full__contacts {
+        float: left;
+        margin: 0 0 0 100px;
+    }
+}
 
 /* Block .search */
 .search{}
@@ -340,6 +378,7 @@ body {
     /* Do nothing */
 }
     .change-region__current {
+        display: inline-block;
         font-size: 14px;
     }
     .change-region__flag {
@@ -354,6 +393,12 @@ body {
         float: right;
         padding-top: 3px;
     }
+        .change-region__link_align_left {
+            display: inline-block;
+            float: none;
+            margin: 0 0 0 10px;
+            color: #FFF;
+        }
 
 /* Block .form-signin */
 .form-signin  {
@@ -478,6 +523,7 @@ body {
 /* Block .footer */
 .footer {
     height: 60px;
+    min-width: 320px;
     background: #333333;
     position: fixed;
     bottom: 0;
@@ -557,17 +603,35 @@ body {
 
 /* Block .account */
 .account {
-    float: right;
     padding: 10px 0 0;
     color: #cccccc;
     font-size: 14px;
     text-align: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
     .account__name {
         font-weight: bold;
         color: #99cc00;
     }
     .account__link {
+        display: block;
         font-size: 24px;
         line-height: 1.0;
+    }
+
+/* Block .contacts */
+.contacts {
+    padding: 10px 0 0;
+    text-align: right;
+}
+    .contacts__phone {
+        font-size: 24px;
+        line-height: 35px;
+        color: #FFF;
+        text-decoration: none;
+    }
+    .contacts__region {
+        color: #CCC;
     }
