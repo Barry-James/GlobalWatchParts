@@ -10,4 +10,20 @@ jQuery(function($) {
         .click(function() {
             _header.toggleClass('is-full');
         });
+
+    $('.js-sign_minus').click(function() {
+        var _input = $(this).siblings('input[type="text"]'),
+            value = parseInt(_input.val(), 10);
+
+        if (value && value > 0) {
+            _input.val(value - 1);
+        }
+    });
+
+    $('.js-sign_plus').click(function() {
+        var _input = $(this).siblings('input[type="text"]'),
+            value = parseInt(_input.val(), 10);
+
+        _input.val(value + 1);
+    });
 });

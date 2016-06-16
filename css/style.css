@@ -4,6 +4,12 @@ body {
     min-width: 320px;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Block .wrapper-bigscreen */
 .wrapper-bigscreen {
     position: relative;
@@ -733,7 +739,7 @@ body {
         color: #CCC;
     }
 
-/* Block brands*/
+/* Block .brands */
 .brands {
     font-size: 14px;
     margin: 10px 0 0 -15px;
@@ -759,7 +765,7 @@ body {
         text-decoration: none;
     }
 
-/*Block sorted-menu*/
+/* Block .sorted-menu */
 .sorted-menu {
     font-size: 14px;
     margin: -10px 0 0 15px;
@@ -821,3 +827,159 @@ body {
         margin: 0 0 0 15px;
     }
 }
+
+/* Block .catalog */
+.catalog{
+    clear: both;
+}
+    .catalog__item {
+        float: left;
+        vertical-align: top;
+        border-top: 40px solid transparent;
+        height: 414px;
+        padding: 0 0 0 15px;
+    }
+    .catalog__link{
+        display: block;
+        position: relative;
+    }
+    .zoom{
+        display: block;
+        background: rgba(255, 255, 255, .5);
+        width: 160px;
+        height: 50px;
+        position: absolute;
+        top: 75%;
+        visibility: hidden;
+    }
+    .zoom__pic{
+        position: absolute;
+        top: 20%;
+        left: 38%;
+    }
+    .catalog__link:hover .zoom{
+        visibility: visible;
+    }
+
+    .discription{
+
+    }
+        .discription__name{
+            font-size: 14px;
+            color: #333333;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .discription__price{
+            text-align: center;
+            font-size: 20px;
+            color: #000000;
+        }
+        .discription__price_msrp{
+            font-size: 12px;
+            color: #666666;
+        }
+    .stock{
+        position: relative;
+    }
+    .stock__pcs-number{
+            font-size: 12px;
+            color: #666666;
+            text-align: center;
+            padding-bottom: 3px;
+        }
+        .stock__adding{
+            margin-bottom: 10px;
+        }
+            .sign {
+                float: left;
+                width: 19px;
+                background: #333333;
+                height: 25px;
+                line-height: 25px;
+                font-size: 20px;
+                text-align: center;
+                vertical-align: top;
+                cursor: pointer;
+            }
+            .sign:hover{
+                box-shadow: 2px 2px 0px 0px #333333 inset,
+                            -2px -2px 0px 0px #333333 inset,
+                            3px 3px 0px 0px #ffffff inset,
+                            -3px -3px 0px 0px #ffffff inset;
+            }
+            .sign_stock1{
+                color: #00ccff;
+            }
+            .sign_stock2{
+                color: #ff6600;
+            }
+            .sign_table{
+                color: #333333;
+                background: #cccccc;
+            }
+            .sign_table:hover{
+                box-shadow: 2px 2px 0px 0px #cccccc inset,
+                            -2px -2px 0px 0px #cccccc inset,
+                            3px 3px 0px 0px #ffffff inset,
+                            -3px -3px 0px 0px #ffffff inset;
+            }
+            .number{
+                float: left;
+                width: 12px;
+                padding: 0 6px 0 8px;
+                color: #000000;
+                border-top: 2px solid #333333;
+                border-bottom: 2px solid #333333;
+                height: 21px;
+                font-size: 14px;
+                position: relative;
+                top: 0px;
+            }
+                .number_table{
+                    border-top: 2px solid #cccccc;
+                    border-bottom: 2px solid #cccccc;
+                }
+            .add{
+                display: inline-block;
+                width: 80px;
+                color: #000000;
+                height: 25px;
+                font-size: 14px;
+            }
+            .add_stock1{
+                background: #00ccff;
+            }
+            .add_stock2{
+                background: #ff6600;
+            }
+
+@media screen and (max-width: 550px) {
+    .catalog__item{
+        padding: 0;
+    }
+}
+
+/* Block .pages */
+.pages{
+    margin: 10px 15px 70px 0;
+    text-align: right;
+    clear: both;
+}
+    .pages__link{
+        font-size: 14px;
+        display: inline-block;
+        padding: 3px;
+    }
+    .pages__link:hover {
+        color: #99cc00;
+        transition: 0.3s;
+    }
+    .pages__link.is-active {
+        color: #99cc00;
+        text-decoration: none;
+    }
+    .dots{
+        display: inline-block;
+        padding: 3px;
+    }

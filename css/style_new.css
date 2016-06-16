@@ -69,7 +69,7 @@
 		color: #ff6600;
 	}
 
-/*Block catalog*/
+/* Block .catalog */
 .catalog{
 	clear: both;
 }
@@ -212,8 +212,8 @@
 		}
 	}
 
-	/*Block pages*/
-	.pages{
+/* Block .pages */
+.pages{
 	margin: 10px 15px 70px 0;
 	text-align: right;
 	clear: both;
