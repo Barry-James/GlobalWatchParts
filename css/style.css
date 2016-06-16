@@ -44,11 +44,25 @@ body {
     height: 43px;
     font-family: 'PT Sans', sans-serif;
 }
+    .header-signin__shade {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        background: rgba(0, 0, 0, .2);
+    }
+        .header-signin.is-full .header-signin__shade {
+            display: block;
+        }
     .header-signin__content {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
+        z-index: 10;
         min-width: 320px;
         height: inherit;
         background: #333333;
@@ -56,15 +70,15 @@ body {
     .header-signin__default {
         display: block;
     }
-    .header-signin.is-full .header-signin__default {
-        display: none;
-    }
+        .header-signin.is-full .header-signin__default {
+            display: none;
+        }
     .header-signin__full {
         display: none;
     }
-    .header-signin.is-full .header-signin__full {
-        display: block;
-    }
+        .header-signin.is-full .header-signin__full {
+            display: block;
+        }
 
 @media screen and (min-width: 720px) {
     .header-signin {
