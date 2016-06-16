@@ -3,19 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>GlobalWatchPartsTradingDistribution</title>
-		<!--link rel="stylesheet" type="text/css" href="css/style_legacy.css"-->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style_new.css">
+		<!--link rel="stylesheet" type="text/css" href="css/style_new.css"-->
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700' rel='stylesheet' type='text/css'>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="js/app.js"></script>
 	</head>
 	<body>
-		<div class="header-signin">
+		<div class="header-signin js-header">
 			<div class="header-signin__content">
 				<div class="wrapper-bigscreen">
 					<div class="header-signin__default header-signin-default">
-						<span class="header-signin-default__menu">
+						<span class="header-signin-default__menu js-header-menu-icon">
 							<img src="images/menu.png" alt="">
 						</span>
 						<a href="/" class="header-signin-default__logo">
@@ -44,42 +45,17 @@
 						<div class="header-signin-full__account account">
 							<div class="account__text">Hello,&nbsp;<span class="account__name">Smbody</span>!</div>
 							<a href="#" class="account__link">Your account</a>
-							<a href="#">Log out</a>
+							<a href="#" class="account__logout">Log out</a>
+						</div>
+						<div class="header-signin-full__brands">
+							<a class="header-signin-full__brands-link" href="">Our brands</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="header-signin__shade js-shade"></div>
 		</div>
-		<!--div class="header header_big clearfix">
-			<div class="wrapper">
-			<a href="entry.html"><img src="images/logo.jpg" class="logo" alt="GlobalWatchParts Logo"></a>
-			<div class="account">
-				<p class="account__text">Hello,&nbsp;<span class="account__name">Smbody</span>!</p>
-				<a href="#" class="account__link">Your account</a><br>
-				<a href="#" class="account__log-out">Log out</a>
-			</div>
-			<div class="phone-number">
-				<div class="country_header">
-					<p class="country__name_header"><img src="images/flags/Russia.png" class="country__image_header" alt="Flag of Russia">Russia</p>
-					<a href="entry.html" class="country__change_header">Change your region</a>
-				</div>
-				<a href="tel:+79255174374" class="phone">+7(925)517-43-74</a>
-			</div>
-			</div>
-		</div>
-		<div class="header_two clearfix">
-			<div class="hamburger">
-				<a href="#"><img src="images/hamburger.jpg"></a>
-			</div>
-			<div class="logo-small">
-			<a href="entry.html"><img src="images/logo.jpg" class="logo" alt="GlobalWatchParts Logo"></a>
-			</div>
-			<a href="entry.html" class="logo_tiny">GWPTD</a>
-			<form class="search search_header">
-				<input type="search" name="search" placeholder="Search" class="search__field"> 
-				<input type="submit" value="Go" class="search__button">
-			</form>
-		</div-->
+
 		<div class="content">
 			<div class="wrapper-bigscreen">
 				<div class="content__column content__column_left">
@@ -101,51 +77,25 @@
 							<li class="brands__item"><a href="#" class="brands__link">Marc by Marc Jacobs</a></li>
 							<li class="brands__item"><a href="#" class="brands__link">Michael Kors</a></li>
 							<li class="brands__item"><a href="#" class="brands__link">Philip Laurence</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Skagen</a></li>
+							<li class="brands__item"><a href="#" class="brands__link is-active">Skagen</a></li>
 							<li class="brands__item"><a href="#" class="brands__link">Нестеров</a></li>
 							<li class="brands__item"><a href="#" class="brands__link">РФС</a></li>
 						</ul>
 					</div>
 				</div>
-				<!--div class="wrapper"-->
-				<!--form class="search search_content">
-					<input type="search" name="search" placeholder="Search" class="search__field"> 
-					<input type="submit" value="Go" class="search__button">
-				</form-->
 				<div class="content__column content__column_right">
-					<div class="active-name">Skagen
-					</div>
+					<h2 class="content__title brand-name">Skagen</h2>
 					<div class="sorted-menu">
-						<h2 class="sorted-menu__header">Sorted by:</h2>
+						<span class="sorted-menu__header">Sorted by:</span>
 						<ul class="sorted-menu__list">
-							<li class="sorted-menu__item sorted-menu__item_stock2"><a href="#" class="sorted-menu__link">In stock #2</a></li>
-							<li class="sorted-menu__item sorted-menu__item_stock1"><a href="#" class="sorted-menu__link">In stock #1</a></li>
-							<li class="sorted-menu__item"><a href="#" class="sorted-menu__link">Oldest</a></li>
-							<li class="sorted-menu__item"><a href="#" class="sorted-menu__link">Newest</a></li>
-							<li class="sorted-menu__item"><a href="#" class="sorted-menu__link">Highest price</a></li>
 							<li class="sorted-menu__item"><a href="#" class="sorted-menu__link">Lowest price</a></li>
+							<li class="sorted-menu__item"><a href="#" class="sorted-menu__link">Highest price</a></li>
+							<li class="sorted-menu__item"><a href="#" class="sorted-menu__link is-active">Newest</a></li>
+							<li class="sorted-menu__item"><a href="#" class="sorted-menu__link">Oldest</a></li>
+							<li class="sorted-menu__item sorted-menu__item_stock1"><a href="#" class="sorted-menu__link">In stock #1</a></li>
+							<li class="sorted-menu__item sorted-menu__item_stock2"><a href="#" class="sorted-menu__link">In stock #2</a></li>
 						</ul>
 					</div>
-					<!--div class="brands">
-						<h2 class="brands__header">Our brands</h2>
-						<ul class="brands__list">
-							<li class="brands__item"><a href="#" class="brands__link">33 ELEMENT</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Armani Exchange</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Diesel</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">DKNY</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Fossil</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">GC</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Guess</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Guess Connect</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Karl Lagerfeld</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Marc by Marc Jacobs</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Michael Kors</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Philip Laurence</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Skagen</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">Нестеров</a></li>
-							<li class="brands__item"><a href="#" class="brands__link">РФС</a></li>
-						</ul>
-					</div-->
 					<form class="catalog clearfix">
 						<div class="catalog__item">
 							<div class="catalog__image">
