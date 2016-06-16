@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>GlobalWatchPartsTradingDistribution</title>
-		<!--link rel="stylesheet" type="text/css" href="css/style_legacy.css"-->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style_new.css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700' rel='stylesheet' type='text/css'>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="js/app.js"></script>
 	</head>
 	<body>
-		<div class="header-signin">
+		<div class="header-signin js-header">
 			<div class="header-signin__content">
 				<div class="wrapper-bigscreen">
 					<div class="header-signin__default header-signin-default">
-						<span class="header-signin-default__menu">
+						<span class="header-signin-default__menu js-header-menu-icon">
 							<img src="images/menu.png" alt="">
 						</span>
 						<a href="/" class="header-signin-default__logo">
@@ -44,225 +44,201 @@
 						<div class="header-signin-full__account account">
 							<div class="account__text">Hello,&nbsp;<span class="account__name">Smbody</span>!</div>
 							<a href="#" class="account__link">Your account</a>
-							<a href="#">Log out</a>
+							<a href="#" class="account__logout">Log out</a>
+						</div>
+						<div class="header-signin-full__brands">
+							<a class="header-signin-full__brands-link" href="">Our brands</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="header-signin__shade js-shade"></div>
 		</div>
-		<!--div class="header header_big clearfix">
-			<div class="wrapper">
-			<a href="entry.html"><img src="images/logo.jpg" class="logo" alt="GlobalWatchParts Logo"></a>
-			<div class="account">
-				<p class="account__text">Hello,&nbsp;<span class="account__name">Smbody</span>!</p>
-				<a href="#" class="account__link">Your account</a><br>
-				<a href="#" class="account__log-out">Log out</a>
-			</div>
-			<div class="phone-number">
-				<div class="country_header">
-					<p class="country__name_header"><img src="images/flags/Russia.png" class="country__image_header" alt="Flag of Russia">Russia</p>
-					<a href="entry.html" class="country__change_header">Change your region</a>
-				</div>
-				<a href="tel:+79255174374" class="phone">+7(925)517-43-74</a>
-			</div>
-			</div>
-		</div>
-		<div class="header_two clearfix">
-			<div class="hamburger">
-				<a href="#"><img src="images/hamburger.jpg"></a>
-			</div>
-			<div class="logo-small">
-			<a href="entry.html"><img src="images/logo.jpg" class="logo" alt="GlobalWatchParts Logo"></a>
-			</div>
-			<a href="entry.html" class="logo_tiny">GWPTD</a>
-			<form class="search search_header">
-				<input type="search" name="search" placeholder="Search" class="search__field"> 
-				<input type="submit" value="Go" class="search__button">
-			</form>
-		</div-->
+
 		<div class="content">
-			<div class="wrapper-bigscreen">
-				<!--div class="wrapper"-->
-						<h2 class="account-header">Your account</h2>
-						<div class="account-menu clearfix">
-							<p class="account__text account-menu__text">Hello,&nbsp;<span class="account__name">Smbody</span>!</p>
-							<p class="country__name account-menu__text"><img src="images/flags/Russia.png" class="country__image" alt="Flag of Russia">Russia</p>
-							<a href="entry.html" class="country__change account-menu__text">Change your region</a>
-							<a href="#" class="account-menu__text account-menu__link">Change your password</a>
-							<a href="#" class="account-menu__text account-menu__link">Email us</a>
-							<a href="#" class="account-menu__text upload account-menu__link">Upload file</a>
-							<a href="#" class="account-menu__text log-out account-menu__link">Log out</a>
-						</div>
-						<div class="line"></div>	
-						<div class="orders-table-wrapper">
-						<h2 class="orders">Orders history from&nbsp;<span class="orders_stock1">Stock #1</span></h2>
-						<div class="orders-table">
-							<div class="orders-table__row">
-								<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
-								<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
-								<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
-								<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#103</a></div>
-								<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">12560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#99</a></div>
-								<div class="orders-table__cell"><a href="#">05/06/2016</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">1560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#103</a></div>
-								<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">12560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
-								<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
-								<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
-								<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#103</a></div>
-								<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">12560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#99</a></div>
-								<div class="orders-table__cell"><a href="#">05/06/2016</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">1560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#103</a></div>
-								<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">12560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
-								<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
-								<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
-								<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#103</a></div>
-								<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">12560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#99</a></div>
-								<div class="orders-table__cell"><a href="#">05/06/2016</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">1560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#103</a></div>
-								<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">12560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
-								<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
-								<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
-								<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#103</a></div>
-								<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">12560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#99</a></div>
-								<div class="orders-table__cell"><a href="#">05/06/2016</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">1560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#103</a></div>
-								<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">12560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
-								<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
-								<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
-								<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#103</a></div>
-								<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">12560 &#8364;</div>
+			<div class="wrapper-bigscreen clearfix">
+				<h2 class="account-header">Your account</h2>
+				<div class="account-menu clearfix">
+					<div class="account-menu__item account-menu__item_name_hello">
+						Hello,&nbsp;<span class="account__name">Smbody</span>!
+					</div>
+					<div class="account-menu__item account-menu__item_name_region">
+						<div class="change-region">
+							<a href="entry.html" class="change-region__link">Change your region</a>
+							<div class="change-region__current">
+								<img src="images/flags/Russia.png" class="change-region__flag" alt="Flag of Russia">Russia
 							</div>
 						</div>
-						<a href="#" class="more-link more-link_stock1">more</a>
+					</div>
+					<div class="account-menu__item">
+						<a href="#" class="account-menu__text account-menu__link">Change your password</a>
+						<a href="#" class="account-menu__text account-menu__link">Email us</a>
+					</div>
+					<div class="account-menu__item">
+						<a href="#" class="account-menu__text upload account-menu__link">Upload file</a>
+						<a href="#" class="account-menu__text log-out account-menu__link">Log out</a>
+					</div>
+				</div>
+				<div class="line"></div>
+				<div class="orders-table-wrapper">
+					<h2 class="orders">Orders history from&nbsp;<span class="orders_stock1">Stock #1</span></h2>
+					<div class="orders-table">
+						<div class="orders-table__row">
+							<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
+							<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
+							<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
+							<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
 						</div>
-						<div class="orders-table-wrapper">
-						<h2 class="orders">Orders history from&nbsp;<span class="orders_stock2">Stock #2</span></h2>
-						<div class="orders-table">
-							<div class="orders-table__row">
-								<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
-								<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
-								<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
-								<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#103</a></div>
-								<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">12560 &#8364;</div>
-							</div>
-							<div class="orders-table__row">
-								<div class="orders-table__cell"><a href="#">#99</a></div>
-								<div class="orders-table__cell"><a href="#">05/06/2016</a></div>
-								<div class="orders-table__cell">128 pcs</div>
-								<div class="orders-table__cell">1560 &#8364;</div>
-							</div>				
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#103</a></div>
+							<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">12560 &#8364;</div>
 						</div>
-						<a href="#" class="more-link more-link_stock2">more</a>
-				<!--/div-->
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#99</a></div>
+							<div class="orders-table__cell"><a href="#">05/06/2016</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">1560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#103</a></div>
+							<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">12560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
+							<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
+							<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
+							<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#103</a></div>
+							<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">12560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#99</a></div>
+							<div class="orders-table__cell"><a href="#">05/06/2016</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">1560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#103</a></div>
+							<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">12560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
+							<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
+							<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
+							<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#103</a></div>
+							<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">12560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#99</a></div>
+							<div class="orders-table__cell"><a href="#">05/06/2016</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">1560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#103</a></div>
+							<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">12560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
+							<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
+							<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
+							<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#103</a></div>
+							<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">12560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#99</a></div>
+							<div class="orders-table__cell"><a href="#">05/06/2016</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">1560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#103</a></div>
+							<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">12560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
+							<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
+							<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
+							<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#103</a></div>
+							<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">12560 &#8364;</div>
+						</div>
+					</div>
+					<a href="#" class="more-link">more</a>
+				</div>
+				<div class="orders-table-wrapper">
+					<h2 class="orders">Orders history from&nbsp;<span class="orders_stock2">Stock #2</span></h2>
+					<div class="orders-table">
+						<div class="orders-table__row">
+							<div class="orders-table__cell orders-table__cell_first"><a href="#">#123</a></div>
+							<div class="orders-table__cell orders-table__cell_second"><a href="#">05/05/2016</a></div>
+							<div class="orders-table__cell orders-table__cell_third">28 pcs</div>
+							<div class="orders-table__cell orders-table__cell_forth">1560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#103</a></div>
+							<div class="orders-table__cell"><a href="#">05/12/2015</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">12560 &#8364;</div>
+						</div>
+						<div class="orders-table__row">
+							<div class="orders-table__cell"><a href="#">#99</a></div>
+							<div class="orders-table__cell"><a href="#">05/06/2016</a></div>
+							<div class="orders-table__cell">128 pcs</div>
+							<div class="orders-table__cell">1560 &#8364;</div>
+						</div>				
+					</div>
+					<a href="#" class="more-link">more</a>
+				</div>
 			</div>
 		</div>
+
 		<div class="footer clearfix">
-			<div class="wrapper-bigscreen">
-				<a href="#" class="cart cart_type_2">
-					<span class="cart__image">
-						<span class="cart__badge">10</span>
-					</span>
-					<span class="cart__text">Cart #2</span>
-				</a>
-				<a href="#" class="cart cart_type_1">
-					<span class="cart__image">
-						<span class="cart__badge">10</span>
-					</span>
-					<span class="cart__text">Cart #1: <span class="cart__cost">14524.28 &#8364;</span></span>
-				</a>
+			<div class="footer__content">
+				<div class="wrapper-bigscreen">
+					<a href="#" class="cart cart_type_2">
+						<span class="cart__image">
+							<span class="cart__badge">10</span>
+						</span>
+						<span class="cart__text">Cart #2</span>
+					</a>
+					<a href="#" class="cart cart_type_1">
+						<span class="cart__image">
+							<span class="cart__badge">10</span>
+						</span>
+						<span class="cart__text">Cart #1: <span class="cart__cost">14524.28 &#8364;</span></span>
+					</a>
+				</div>
 			</div>
 		</div>
-		<!--div class="footer clearfix">
-			<div class="wrapper">
-				<div class="cart">
-					<img src="images/cart2.png" alt="cart #2" class="cart__image">
-					<p class="cart__text">Cart #2</p>
-				</div>
-				<div class="cart">
-					<img src="images/cart1.png" alt="cart #1" class="cart__image">
-					<p class="cart__text">Cart #1:&nbsp;<span class="cart__cost_one">14524.28 &#8364;</span></p>
-					<p class="cart__circle">10</p>
-				</div>
-			</div>
-		</div-->
 	</body>
 </html>
 
