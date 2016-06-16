@@ -7,6 +7,7 @@ body {
 /* Block .wrapper-bigscreen */
 .wrapper-bigscreen {
     position: relative;
+    height: 100%;
     /*max-width: 1280px;*/
     margin: 0 auto;
 }
@@ -75,9 +76,14 @@ body {
         }
     .header-signin__full {
         display: none;
+        height: 100%;
     }
         .header-signin.is-full .header-signin__full {
-            display: block;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
         }
 
 @media screen and (min-width: 720px) {
@@ -97,7 +103,11 @@ body {
             display: none;
         }
         .header-signin__full {
-            display: block;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
         }
 }
 
@@ -154,52 +164,104 @@ body {
 
 /* Block .header-signin-full */
 .header-signin-full {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -o-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
     padding: 0 15px;
     vertical-align: top;
 }
 
     .header-signin-full__logo-image {
         display: none;
-        margin: 20px 0 0;
-        height: 42px;
+        height: inherit;
+        padding: 20px 0 0;
         vertical-align: top;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
 
-    .header-signin-full__account {
-        
+    .header-signin-full__brands {
+        position: relative;
+        float: right;
+        width: 245px;
+        height: inherit;
+        margin: 0 -15px 0 0;
+        background: #666666;
+        text-align: center;
     }
 
-    .header-signin-full__contacts {
-        
+    .header-signin-full__brands-link {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        font-size: 24px;
+        color: #FFF;
     }
 
-@media screen and (min-width: 720px) {
-    .header-signin-full__contacts {
-        float: left;
-        margin: 0 30% 0 0;
+@media screen and (max-width: 720px) {
+    .header-signin.is-full .header-signin__content {
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: #333333;
     }
-    .header-signin-full__account {
-        float: left;
+
+    .header-signin.is-full .header-signin-full {
+        -webkit-justify-content: flex-start;
+        -moz-justify-content: flex-start;
+        -ms-justify-content: flex-start;
+        -o-justify-content: flex-start;
+        justify-content: flex-start;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header-signin.is-full .header-signin-full__logo-image {
+        height: auto;
+    }
+
+    .header-signin.is-full .header-signin-full__brands {
+        width: 100%;
+        height: 45px;
+    }
+
+    .header-signin.is-full .header-signin-full__contacts {
+        text-align: left;
+        padding: 10px 15px;
+        border-bottom: 1px solid #666666;
+    }
+
+    .header-signin.is-full .header-signin-full__account {
+        padding: 15px;
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1280px) {
+    .header-signin-full__brands {
+        display: none;
+    }
     .header-signin-full__logo-image {
         display: inline-block;
-        float: left;
-    }
-
-    .header-signin-full__account {
-        float: right;
-        width: 180px;
-    }
-
-    .header-signin-full__contacts {
-        float: left;
-        margin: 0 0 0 100px;
     }
 }
 
@@ -634,6 +696,23 @@ body {
         font-size: 24px;
         line-height: 1.0;
     }
+
+@media screen and (max-width: 1280px) {
+    .account {
+        min-width: 200px;
+        text-align: left;
+    }
+        .account__text {
+            margin: 0 0 7px;
+        }
+        .account__link {
+            display: inline-block;
+            margin: 0 15px 0 0;
+        }
+        .account__logout {
+
+        }
+}
 
 /* Block .contacts */
 .contacts {
