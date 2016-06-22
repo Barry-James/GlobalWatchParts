@@ -1,0 +1,211 @@
+body{
+	margin: 50px 0 0 15px;
+	padding: 0;
+}
+a{
+	color: inherit;
+}
+/*Block cart-orders*/
+.cart-orders{
+	display: table;
+	font-family: 'PT Sans', sans-serif;
+	border-bottom: 1px solid #cccccc;
+}
+	
+.table-row{
+	display: table-row;
+}
+	.table-row:nth-child(2n){
+        background-color: #ededed;
+    }
+	.table-row:first-child{
+		color: #999999;
+	    font-size: 14px;
+	}
+	.table-cell{
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		border-top: 5px solid #ffffff;
+}
+.first-column{
+	width: 45px;
+	color: #999999;
+}
+.cart-orders__image{
+	height: 100px;
+    width: 80px;
+    vertical-align: middle;
+}
+.forth-column{
+	width: 84px;
+}
+.first-row{
+	border-bottom: 1px solid #cccccc;
+	padding: 0 0 5px 0;
+}
+.last-row{
+	border-bottom: 5px solid #ffffff;
+}
+
+ @media screen and (max-width: 720px) {
+ 	.first-row{
+ 		display: none;
+ 	}
+ 	.cart-orders{
+ 		border-top: 1px solid #cccccc;
+ 	}
+ }
+
+@media screen and (max-width: 470px){
+	.first-column{
+	min-width: 30px;
+	}
+	.forth-column{
+		min-width: 50px;
+		vertical-align: bottom;
+		padding: 0 0 10px 0;
+	}
+}
+
+/*Block table-iside*/
+.table-inside{
+	display: table;
+	width: 100%;
+}
+	.table-inside_second{
+		height: 100px;
+	}
+	.table-inside__cell{
+		display: table-cell;
+		vertical-align: middle;
+	}
+		.table-inside__cell_first{
+			text-align: left;
+			width: 230px;
+		}
+		.table-inside__cell_item{
+			padding-left: 15px;
+			width: 230px;
+			box-sizing: border-box;
+		}
+		.table-inside__cell_second{
+			width: 84px;
+		}
+			.price-invisible{
+				display: none;
+			}
+		.table-inside__cell_third{
+			width: 150px;
+		}
+	    .cart-orders__discription{
+	    	padding: 15px 0 0 15px;
+	    	color: #000000;
+	        font-size: 14px;
+	        display: block;
+	    }
+	    .cart-orders__discription_price-msrp{
+	    	font-size: 12px;
+	        color: #666666;
+	    }
+
+ @media screen and (max-width: 720px) {
+ 	.table-inside_first{
+		display: none;
+	}
+ }	    
+
+@media screen and (max-width: 470px) {
+	.table-inside{
+		display: table-cell;
+		min-width: 80px;
+	}
+	.table-inside__cell{
+		display: block;
+		min-width: 80px;
+	}
+	.cart-orders__discription{
+	    padding: 0px 0 0 15px;
+	}
+	.table-inside__cell_first{
+		width: 125px;
+	}
+	.table-inside__cell_second{
+		text-align: left;
+		padding: 0 0 0 15px;
+		font-size: 12px;
+	    color: #666666;
+	}
+	.price-invisible{
+		display: inline;
+	}
+	.table-inside__cell_third{
+		width: 125px;
+		padding: 0px 0 0 15px;
+	}
+	.table-inside_first{
+		display: none;
+	}
+ }
+
+
+/*Block table-price*/
+.table__price {
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+
+.sign {
+        float: left;
+        width: 19px;
+        background: #333333;
+        height: 25px;
+        line-height: 25px;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: top;
+        cursor: pointer;
+       }
+         .sign:hover{
+             box-shadow: 2px 2px 0px 0px #333333 inset,
+                         -2px -2px 0px 0px #333333 inset,
+                         3px 3px 0px 0px #ffffff inset,
+                         -3px -3px 0px 0px #ffffff inset;
+            }
+
+	     .sign_table{
+	                color: #333333;
+	                background: #cccccc;
+	            }
+            .sign_table:hover{
+                box-shadow: 2px 2px 0px 0px #cccccc inset,
+                            -2px -2px 0px 0px #cccccc inset,
+                            3px 3px 0px 0px #ffffff inset,
+                            -3px -3px 0px 0px #ffffff inset;
+            }
+.number{
+        float: left;
+        width: 12px;
+        padding: 0 6px 0 8px;
+        color: #000000;
+        border-top: 2px solid #333333;
+        border-bottom: 2px solid #333333;
+        height: 21px;
+        font-size: 14px;
+        position: relative;
+        top: 0px;
+       }
+        .number_table{
+            border-top: 2px solid #cccccc;
+            border-bottom: 2px solid #cccccc;
+        }
+
+ @media screen and (max-width: 470px) {
+ 	.table__price{
+		width: 100%;
+		display: block;
+		padding: 5px 0 0 0;
+	}
+ }
+
