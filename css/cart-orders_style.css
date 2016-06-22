@@ -2,16 +2,24 @@ body{
 	margin: 50px 0 0 15px;
 	padding: 0;
 }
-a{
-	color: inherit;
-}
-/*Block cart-orders*/
-.cart-orders{
+
+/**
+ * table-row → cart-orders__row
+ * table-cell → cart-orders__cell
+ * first-column → cart-orders__cell cart-orders__cell_column_first
+ * table-inside → table-inner
+ * table__price → cart-orders__count
+ *
+ * @todo: Get rid of all foreign blocks
+ */
+
+/* Block cart-orders */
+.cart-orders {
 	display: table;
 	font-family: 'PT Sans', sans-serif;
 	border-bottom: 1px solid #cccccc;
 }
-	
+
 .table-row{
 	display: table-row;
 }
@@ -28,7 +36,7 @@ a{
 		vertical-align: middle;
 		border-top: 5px solid #ffffff;
 }
-.first-column{
+.first-column {
 	width: 45px;
 	color: #999999;
 }
