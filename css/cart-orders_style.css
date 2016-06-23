@@ -18,6 +18,7 @@ body{
 	display: table;
 	font-family: 'PT Sans', sans-serif;
 	border-bottom: 1px solid #cccccc;
+	margin: 0 0 0 15px;
 }
 
 .cart-orders__row{
