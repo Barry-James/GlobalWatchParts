@@ -20,23 +20,23 @@ body{
 	border-bottom: 1px solid #cccccc;
 }
 
-.table-row{
+.cart-orders__row{
 	display: table-row;
 }
-	.table-row:nth-child(2n){
+	.cart-orders__row:nth-child(2n){
         background-color: #ededed;
     }
-	.table-row:first-child{
+	.cart-orders__row:first-child{
 		color: #999999;
 	    font-size: 14px;
 	}
-	.table-cell{
+	.cart-orders__cell{
 		display: table-cell;
 		text-align: center;
 		vertical-align: middle;
 		border-top: 5px solid #ffffff;
 }
-.first-column {
+.cart-orders__cell_column_first {
 	width: 45px;
 	color: #999999;
 }
@@ -45,65 +45,65 @@ body{
     width: 80px;
     vertical-align: middle;
 }
-.forth-column{
+.cart-orders__cell_column_fourth{
 	width: 84px;
 }
-.first-row{
+.cart-orders__cell_row_first{
 	border-bottom: 1px solid #cccccc;
 	padding: 0 0 5px 0;
 }
-.last-row{
+.cart-orders__cell_row_last{
 	border-bottom: 5px solid #ffffff;
 }
 
  @media screen and (max-width: 720px) {
- 	.first-row{
- 		display: none;
- 	}
  	.cart-orders{
  		border-top: 1px solid #cccccc;
+ 	}
+ 	.cart-orders__cell_row_first{
+ 		display: none;
  	}
  }
 
 @media screen and (max-width: 470px){
-	.first-column{
-	min-width: 30px;
+	.cart-orders__cell_column_first{
+		min-width: 30px;
 	}
-	.forth-column{
+	.cart-orders__cell_column_fourth{
 		min-width: 50px;
 		vertical-align: bottom;
 		padding: 0 0 10px 0;
 	}
 }
 
-/*Block table-iside*/
-.table-inside{
+/*Block table-inner*/
+.table-inner{
 	display: table;
 	width: 100%;
 }
-	.table-inside_second{
+	.table-inner_second{
 		height: 100px;
 	}
-	.table-inside__cell{
+	.table-inner__cell{
 		display: table-cell;
 		vertical-align: middle;
 	}
-		.table-inside__cell_first{
+		.table-inner__cell_first{
 			text-align: left;
 			width: 230px;
 		}
-		.table-inside__cell_item{
+		.table-inner__cell_item{
 			padding-left: 15px;
 			width: 230px;
 			box-sizing: border-box;
 		}
-		.table-inside__cell_second{
+		.table-inner__cell_second{
 			width: 84px;
 		}
 			.price-invisible{
 				display: none;
 			}
-		.table-inside__cell_third{
+		.table-inner__cell_third{
 			width: 150px;
 		}
 	    .cart-orders__discription{
@@ -112,33 +112,36 @@ body{
 	        font-size: 14px;
 	        display: block;
 	    }
+	    .cart-orders__discription_link{
+	    	color: #000000;
+	    }
 	    .cart-orders__discription_price-msrp{
 	    	font-size: 12px;
 	        color: #666666;
 	    }
 
  @media screen and (max-width: 720px) {
- 	.table-inside_first{
+ 	.table-inner_first{
 		display: none;
 	}
  }	    
 
 @media screen and (max-width: 470px) {
-	.table-inside{
+	.table-inner{
 		display: table-cell;
 		min-width: 80px;
 	}
-	.table-inside__cell{
+	.table-inner__cell{
 		display: block;
 		min-width: 80px;
 	}
 	.cart-orders__discription{
 	    padding: 0px 0 0 15px;
 	}
-	.table-inside__cell_first{
+	.table-inner__cell_first{
 		width: 125px;
 	}
-	.table-inside__cell_second{
+	.table-inner__cell_second{
 		text-align: left;
 		padding: 0 0 0 15px;
 		font-size: 12px;
@@ -147,70 +150,56 @@ body{
 	.price-invisible{
 		display: inline;
 	}
-	.table-inside__cell_third{
+	.table-inner__cell_third{
 		width: 125px;
 		padding: 0px 0 0 15px;
 	}
-	.table-inside_first{
+	.table-inner_first{
 		display: none;
 	}
  }
 
 
-/*Block table-price*/
-.table__price {
+/*Block quantity*/
+.quantity {
         display: inline-block;
         margin: 0 auto;
         vertical-align: middle;
     }
 
-.sign {
-        float: left;
-        width: 19px;
-        background: #333333;
-        height: 25px;
-        line-height: 25px;
-        font-size: 20px;
-        text-align: center;
-        vertical-align: top;
-        cursor: pointer;
-       }
-         .sign:hover{
-             box-shadow: 2px 2px 0px 0px #333333 inset,
-                         -2px -2px 0px 0px #333333 inset,
-                         3px 3px 0px 0px #ffffff inset,
-                         -3px -3px 0px 0px #ffffff inset;
-            }
-
-	     .sign_table{
-	                color: #333333;
-	                background: #cccccc;
+	.quantity__sign {
+	        float: left;
+	        width: 19px;
+	        background: #cccccc;
+	        height: 25px;
+	        line-height: 25px;
+	        font-size: 20px;
+	        text-align: center;
+	        vertical-align: top;
+	        cursor: pointer;
+	        color: #333333;
+	       }
+	         .quantity__sign:hover{
+	             box-shadow: 2px 2px 0px 0px #cccccc inset,
+	                         -2px -2px 0px 0px #cccccc inset,
+	                         3px 3px 0px 0px #ffffff inset,
+	                         -3px -3px 0px 0px #ffffff inset;
 	            }
-            .sign_table:hover{
-                box-shadow: 2px 2px 0px 0px #cccccc inset,
-                            -2px -2px 0px 0px #cccccc inset,
-                            3px 3px 0px 0px #ffffff inset,
-                            -3px -3px 0px 0px #ffffff inset;
-            }
-.number{
-        float: left;
-        width: 12px;
-        padding: 0 6px 0 8px;
-        color: #000000;
-        border-top: 2px solid #333333;
-        border-bottom: 2px solid #333333;
-        height: 21px;
-        font-size: 14px;
-        position: relative;
-        top: 0px;
-       }
-        .number_table{
-            border-top: 2px solid #cccccc;
-            border-bottom: 2px solid #cccccc;
-        }
+	.quantity__number{
+	        float: left;
+	        width: 12px;
+	        padding: 0 6px 0 8px;
+	        color: #000000;
+	        border-top: 2px solid #cccccc;
+	        border-bottom: 2px solid #cccccc;
+	        height: 21px;
+	        font-size: 14px;
+	        position: relative;
+	        top: 0px;
+	       }
 
  @media screen and (max-width: 470px) {
- 	.table__price{
+ 	.quantity{
 		width: 100%;
 		display: block;
 		padding: 5px 0 0 0;
