@@ -1335,7 +1335,12 @@ body {
         width: 100px;
     }
 
-.more-link{
+
+.more{
+    width: 100%;
+    text-align: right;
+}
+.more__link{
     margin: 10px 0 0;
     font-size: 14px;
     color: #333333;
