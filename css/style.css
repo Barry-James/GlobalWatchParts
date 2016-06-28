@@ -975,7 +975,9 @@ body {
             */
 .catalog-item {
     width: 160px;
-    margin: 15px 10px 50px 0;
+    flex-grow: 1;
+    margin: 15px 5px 50px 0;
+    text-align: center;
     }
     .catalog-item__link{
             display: block;
@@ -1014,6 +1016,13 @@ body {
         color: #666666;
         margin: 5px 0 0 0;
         }
+
+@media screen and (max-width: 350px){
+    .catalog-item{
+        width: 155px;
+        margin: 15px 0 50px 0;
+    }
+}
 
 /*Block stock*/
 .stock{
