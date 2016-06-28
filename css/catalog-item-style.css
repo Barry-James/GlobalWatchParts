@@ -1,0 +1,126 @@
+body{
+	font-family: 'PT Sans', sans-serif;
+}
+/*Block catalog-item*/
+.catalog-item {
+    width: 160px;
+	}
+.catalog-item__link{
+        display: block;
+        position: relative;
+    }
+.catalog-item__zoom{
+        display: block;
+        position: absolute;
+        top: 75%;
+        width: 160px;
+        height: 50px;
+        background: rgba(255, 255, 255, .5) url('../images/zoom.png') no-repeat 50% 50%;
+        visibility: hidden;
+    }
+.catalog-item__link:hover .catalog-item__zoom{
+        visibility: visible;
+    }
+.catalog-item__name{
+	text-align: center;
+	padding: 10px 0 0 0;
+	font-size: 14px;
+    color: #333333;
+	}
+.catalog-item__name-link{
+	color: #333333;
+}
+.catalog-item__price{
+	text-align: center;
+    font-size: 20px;
+    color: #000000;
+    margin: 0 0 5px 0;
+	}
+.catalog-item__msrp-price{
+	text-align: center;
+	font-size: 12px;
+    color: #666666;
+    margin: 5px 0 0 0;
+	}
+
+/*Block stock*/
+.stock__pcs-number{
+	text-align: center;
+    font-size: 12px;
+    color: #666666;
+    padding-bottom: 3px;
+	} 
+.stock__button{
+	display: inline-block;
+	height: 25px;
+    width: 90px;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+}
+	.stock__button_stock1{
+		background-color: #00ccff;
+	}
+	.stock__button_stock2{
+		background-color: #ff6600;
+	}
+	.stock__button_stock1:hover{
+		background-color: #333333;
+		color: #00ccff;
+		border: 1px solid #00ccff;
+	}
+	.stock__button_stock2:hover{
+		background-color: #333333;
+		color: #ff6600;
+		border: 1px solid #ff6600;
+	}
+
+/*Block quantity*/
+.stock-quantity {
+    display: inline-block;
+    vertical-align: middle;
+}
+    .stock-quantity__sign {
+        float: left;
+        width: 19px;
+        background: #333333;
+        height: 25px;
+        line-height: 25px;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: top;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    	.stock-quantity__sign_stock1{
+    		color: #00ccff;
+    	}
+    	.stock-quantity__sign_stock2{
+    		color: #ff6600;
+    	}
+        .stock-quantity__sign:hover {
+            box-shadow: 2px 2px 0px 0px #333333 inset,
+                        -2px -2px 0px 0px #333333 inset,
+                        3px 3px 0px 0px #ffffff inset,
+                        -3px -3px 0px 0px #ffffff inset;
+        }
+    .stock-quantity__number {
+        position: relative;
+        top: 0;
+        float: left;
+        width: 25px;
+        height: 19px;
+        color: #000000;
+        border-top: 2px solid #333333;
+        border-bottom: 2px solid #333333;
+        font-size: 14px;
+        text-align: center;
+        border-left: none;
+        border-right: none; 
+    }
