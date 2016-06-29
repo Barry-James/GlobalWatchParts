@@ -857,7 +857,7 @@ body {
 .catalog-item {
     width: 160px;
     flex-grow: 1;
-    margin: 15px 5px 50px 0;
+    margin: 15px 15px 50px 10px;
     text-align: center;
     }
     .catalog-item__link{
@@ -915,6 +915,9 @@ body {
         color: #666666;
         padding-bottom: 3px;
         } 
+        .stock__pcs-number_bold{
+            font-weight: bold;
+        }
     .stock__button{
         display: inline-block;
         height: 25px;
@@ -980,10 +983,10 @@ body {
         top: 0;
         float: left;
         width: 25px;
-        height: 21px;
+        height: 19px;
         color: #000000;
-        border-top: 2px solid #333333;
-        border-bottom: 2px solid #333333;
+        border-top: 3px solid #333333;
+        border-bottom: 3px solid #333333;
         font-size: 14px;
         text-align: center;
         border-left: none;
