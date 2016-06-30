@@ -497,6 +497,30 @@ body {
         .change-region_bg_dark .change-region__link {
             color: #FFF;
         }
+
+@media screen and (min-width: 1280px){
+    .change-region{
+        display: inline-block;
+        max-width: 120px;
+        text-align: left;
+        margin: 17px 0 0 0;
+    }
+    .change-region__current{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .change-region__flag{
+        width: 31px;
+        height: 17px;
+    }
+    .change-region__link{
+        float: none;
+        font-size: 14px;
+        color: #cccccc !important;
+        margin: 0;
+        padding: 0;
+    }
+}
     
 
 /* Block .form-signin */
@@ -756,6 +780,14 @@ body {
     .contacts__region {
         color: #CCC;
     }
+@media screen and (min-width: 1280px){
+    .contacts__phone {
+        display: inline-block;
+        vertical-align: top;
+        margin: 12px 15px 0 0;
+        font-size: 30px;
+    }
+}
 
 /* Block .brands */
 .brands {
@@ -898,7 +930,7 @@ body {
         margin: 5px 0 0 0;
         }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 390px){
     .catalog-item{
         width: 155px;
         margin: 15px 0 50px 0;
