@@ -471,6 +471,12 @@ body {
 .change-region {
     text-align: right;
 }
+    .change-region_header-signin-full{
+        display: inline-block;
+        max-width: 200px;
+        text-align: left;
+        margin: 17px 0 0 0;
+    }
     .change-region_container_wide {
         text-align: left;
     }
@@ -478,12 +484,20 @@ body {
         display: inline-block;
         font-size: 14px;
     }
+        .change-region__current_header-signin-full{
+            font-size: 24px;
+            line-height: 24px;
+        }
     .change-region__flag {
         width: 15px;
         height: 10px;
         box-shadow: 1px 2px 8px 0px rgba(153, 153, 153, 0.75);
         margin-right: 4px;
     }
+        .change-region__flag_header-signin-full{
+            width: 31px;
+            height: 17px;
+        }
         .change-region_bg_dark .change-region__flag {
             box-shadow: none;
         }
@@ -494,31 +508,40 @@ body {
         font-size: 10px;
         color: #666666;
     }
+        .change-region__link_header-signin-full{
+            float: none;
+            font-size: 14px;
+            color: #cccccc !important;
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
         .change-region_bg_dark .change-region__link {
             color: #FFF;
         }
 
-@media screen and (min-width: 1280px){
-    .change-region{
-        display: inline-block;
-        max-width: 200px;
-        text-align: left;
-        margin: 17px 0 0 0;
-    }
-    .change-region__current{
-        font-size: 24px;
-        line-height: 24px;
-    }
-    .change-region__flag{
-        width: 31px;
-        height: 17px;
-    }
-    .change-region__link{
-        float: none;
-        font-size: 14px;
-        color: #cccccc !important;
+@media screen and (max-width: 1280px){
+    .change-region_header-signin-full{
+        display: block;
+        max-width: none;
+        text-align: right;
         margin: 0;
-        padding: 0;
+    }
+    .change-region__current_header-signin-full{
+        display: inline-block;
+        font-size: 14px;
+        line-height: normal;
+    }
+    .change-region__flag_header-signin-full{
+        width: 15px;
+        height: 10px;
+    }
+    .change-region__link_header-signin-full{
+        float: right;
+        font-size: 10px;
+        color: #ffffff !important;
+        margin: 0 0 0 15px;
+        padding: 5px 0 0;
         white-space: nowrap;
     }
 }
