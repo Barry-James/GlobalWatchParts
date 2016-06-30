@@ -883,7 +883,11 @@ body {
 .catalog{
     clear: both;
     display: flex;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
 }
