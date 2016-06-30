@@ -501,7 +501,7 @@ body {
 @media screen and (min-width: 1280px){
     .change-region{
         display: inline-block;
-        max-width: 120px;
+        max-width: 200px;
         text-align: left;
         margin: 17px 0 0 0;
     }
@@ -519,6 +519,7 @@ body {
         color: #cccccc !important;
         margin: 0;
         padding: 0;
+        white-space: nowrap;
     }
 }
     
