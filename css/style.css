@@ -259,7 +259,7 @@ body {
     }
 
     .header-signin.is-full .header-signin-full__contacts {
-        text-align: left;
+        text-align: center;
         padding: 10px 15px;
         border-bottom: 1px solid #666666;
     }
